@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:wght@300&family=Rubik:wght@600&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway';
+    hyphens: auto;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/* <------ Header Nac Section ------> */
+header {
+    /* min-height: 100vh; */
+    background-image: linear-gradient(to left, #F7F8F8, #E9ECF2);    
+}
+
+nav {
+    width: 100%;
+    height: 73px;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid black;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1160px;
+    height: 73px;
+    margin: 0 auto;
+}
+
+.nav-logo a {
+    font-size: 23px;
+    font-weight: 800;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-menu ul {
+    display: flex;
+}
+
+.nav-menu { 
+    display: flex;
+}
+
+.nav-burger {
+    display: none;
+}
+
+.nav-menu ul li {
+    list-style: none;
+    margin-left: 25px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.nav-menu ul li a:hover {
+    color: black;
+}
+
+.nav-menu ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: black;
+    transition: width 0.3s;
+}
+
+.nav-menu ul li a:hover::after {
+    width: 100%;
+}
+  
+/* ------ Main ------ */
+
+.cover {
+    position: relative;
+    text-align: left;
+}
+
+.cover-title-container {
+    font-family: 'Quicksand';
+    position: absolute;
+    bottom: 300px;
+    left: 150px;
+}
+
+.cover .cover-title-container h1 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 100px;
+    margin-bottom: 0;
+}
+.cover .cover-title-container h2 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 25px;
+    margin: 0;
+    padding-left: 10px;
+}
+
+img {
+    width: 100%;
+    height: 100vh;
+}
+
+/* ------ Services ------ */
+
+.services {
+    width: 100%;
+    background-image: linear-gradient(to right, #F7F8F8, #E9ECF2);  
+}
+
+.services-container {
+    font-family: 'Raleway';
+    height: 100vh;
+    margin: 0 10% ;
+    display: flex;  
+    align-items: center;
+}
+
+.services .left-container {
+    margin: 0 25px 0 0;
+    width: 50%;
+    height: 75vh;
+}
+
+.services .left-container .section-header {
+    font-family: 'Quicksand';
+    display: flex;
+    align-items: center;
+}
+
+.services .left-container .section-header .section-number {
+    font-family: 'Rubik';
+    font-size: 50px;
+    margin-right: 20px;
+}
+
+.services .left-container .section-header .section-title {
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+.services .left-container .services-icon {
+    display: flex;
+    margin: 20px 0;
+}
+
+.icon1, .icon2, .icon3 {
+    justify-content: center;
+    margin: 10px 10px;
+    width: 30%;
+
+} 
+
+.services .left-container .services-text {
+    margin: 20px 0;
+    font-size: 19px;
+}
+
+.ion-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.services .right-container {
+    margin: 0 0 0 25px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    height: 75vh;
+}
+
+.services .right-container .services-img {
+    width:  300px;
+    height: 280px;
+}
+
+.desktop1 {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.desktop2 {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+/* ------ History ------ */
+
+.history {
+    width: 100%;
+    background-image: linear-gradient(to left, #F7F8F8, #E9ECF2);  
+    margin: 0 auto;
+}
+
+.history-container {
+    width: 90%;
+    max-width: 1160px;
+    font-family: 'Raleway';
+    height: 100vh;
+    margin: 0 10% ;
+    display: flex;  
+    align-items: center;
+}
+
+.history-image {
+    width: 120%;
+    height: 100%;
+}
+
+.history .left-container {
+    margin: 0 25px 0 0;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    height: 75vh;
+}
+
+.history .right-container {
+    margin: 0 0 0 25px;
+    width: 50%;
+    height: 75vh;
+}
+
+.history .right-container .section-header {
+    font-family: 'Quicksand';
+    display: flex;
+    align-items: center;
+}
+
+.history .right-container .section-header .section-number {
+    font-family: 'Rubik';
+    font-size: 50px;
+    margin-right: 20px;
+}
+
+.history .right-container .section-header .section-title {
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+.history .right-container .history-text {
+    margin: 50px 0;
+    font-size: 19px;
+}
+
+/* ------ About ------ */
+
+.about {
+    width: 100%;
+    background-image: linear-gradient(to right, #F7F8F8, #E9ECF2);  
+}
+
+.about-container {
+    width: 90%;
+    max-width: 1160px;
+    height: 100vh;
+    margin: 0 10% ;
+    display: flex;  
+    align-items: center;
+}
+
+.about-image {
+    width: 100%;
+    height: 100%;
+}
+
+.about .left-container {
+    margin: 0 25px 0 0;
+    width: 50%;
+    height: 75vh;
+}
+
+
+.about .left-container .section-header {
+    font-family: 'Quicksand';
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.about .left-container .section-header .section-number {
+    font-family: 'Rubik';
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+.about .left-container .section-header .section-title {
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+.about .left-container .about-text {
+    text-align: right;
+    margin: 50px 0;
+    font-size: 19px;
+}
+
+.about .right-container {
+    margin: 0 0 0 25px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    height: 75vh;
+}
+
+/* ------ Works ------ */
+
+.works {
+    width: 100%;
+    height: 150vh;
+    display: flex;  
+    align-items: center;
+    background-image: linear-gradient(to left, #F7F8F8, #E9ECF2);  
+}
+
+.works-container {
+    width: 90%;
+    max-width: 1160px;
+    margin: 0 10% ;
+    display: block;  
+    align-items: center;
+}
+
+.works-top-container {
+    height: 40vh;
+    margin: 0 0 25px 0;
+    display: flex;
+}
+
+.works .left-container {
+    margin: 0 25px 0 0;
+    width: 50%;
+}
+
+
+.works .left-container .section-header {
+    font-family: 'Quicksand';
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.works .left-container .section-header .section-number {
+    font-family: 'Rubik';
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+.works .left-container .section-header .section-title {
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+.works .left-container .works-text {
+    text-align: right;
+    margin: 50px 0;
+    font-size: 19px;
+}
+
+
+.works .right-container {
+    margin: 0 0 0 25px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+}
+
+.works-img1 {
+    width: 100%;
+    height: 100%;
+}
+
+.works-middle-container {
+    border: 3px solid black;
+    background-color: grey;
+    height: 35vh;
+    overflow: hidden;
+}
+
+.img-cont {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.works-bottom-container {
+    height: 45vh;
+    overflow: hidden;
+    display: flex;
+}
+
+
+.works-img2 {
+    width:  80%;
+    height: 100%;
+    top: 5px;
+    object-fit: cover;
+}
+
+.works-img3 {
+    width:  50%;
+    height: 100%;
+    margin-right: 30px;
+    object-fit: cover;
+}
+
+.works-img4 {
+    width:  100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ------ Vison & Mission ------ */
+
+.vision {
+    width: 100%;
+    background-image: linear-gradient(to right, #F7F8F8, #E9ECF2);  
+    margin: 0 auto;
+    
+}
+
+.vision-container {
+    width: 90%;
+    max-width: 1160px;
+    font-family: 'Raleway';
+    height: 100vh;
+    margin: 0 10% ;
+    display: flex;  
+    align-items: center;
+}
+
+
+.vision .left-container {
+    margin: 0 25px 0 0;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 70%;
+    height: 75vh;
+}
+
+
+.vision-image1 {
+    width: 50%;
+    height: 85%;
+    object-fit: cover;
+    margin: 0 25px 0 0;
+}
+.vision-image2 {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vision .right-container {
+    margin: 0 0 0 25px;
+    width: 30%;
+    height: 75vh;
+}
+
+.vision .right-container .section-header {
+    font-family: 'Quicksand';
+    display: flex;
+    align-items: center;
+}
+
+.vision .right-container .section-header .section-number {
+    font-family: 'Rubik';
+    font-size: 50px;
+    margin-right: 20px;
+}
+
+.vision .right-container .section-header .section-title {
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+.vision .right-container .vision-text {
+    margin: 50px 0;
+    font-size: 19px;
+}
+
+/* ------ Contact ------ */
+
+
+.contact {
+    background-image: linear-gradient(to left, #F7F8F8, #E9ECF2);  
+    width: 100%;
+    font-family: 'Raleway';
+    height: 50vh;
+    display: flex;  
+}
+
+.contact-container {
+    margin: 0 10%;
+    display: flex;
+    width: 90%;
+    max-width: 1160px;
+}
+
+.contact .left-container{
+    margin: 0 25px 0 0;
+    display: flex;
+    justify-content: right;
+    width: 30%;
+}
+.contact .right-container{
+    margin: 0 0 0 25px;
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.contact .left-container .section-header {
+    font-family: 'Quicksand';
+    display: flex;
+    align-items: center;
+    
+}
+
+.contact .left-container .section-header .section-number {
+    font-family: 'Rubik';
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+.contact .left-container .section-header .section-title {
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+.contact .right-container .contact-text {
+    margin: 50px 0;
+    font-size: 19px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Quicksand";
+    color: red;
+}
+
+a:hover {
+    color: black;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    height: 5vh;
+}
+
+.footer-container {
+    margin: 0 10%;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 1160px;
+    color: white;
+}
