@@ -9,20 +9,16 @@ body {
     font-family: 'Raleway';
     hyphens: auto;
     overflow-x: hidden;
-    margin: 0;
+    margin: 0 auto;
 }
 
 /* <------ Header Nac Section ------> */
 header {
     /* min-height: 100vh; */
     background-image: linear-gradient(to left, #F7F8F8, #E9ECF2);    
-}
-
-nav {
     width: 100%;
-    height: 73px;
+    height: 5em;
     transition: all 0.3s ease-in-out;
-    border-bottom: 1px solid black;
 }
 
 .nav-container {
@@ -31,85 +27,82 @@ nav {
     align-items: center;
     width: 90%;
     max-width: 1160px;
-    height: 73px;
+    height: 5em;
     margin: 0 auto;
 }
 
 .nav-logo a {
-    font-size: 23px;
-    font-weight: 800;
-    text-decoration: none;
     color: black;
 }
 
-.nav-menu ul {
-    display: flex;
+.nav-logo a:hover {
+    color: #FF4C09;
 }
 
-.nav-menu { 
-    display: flex;
+#nav-menu #hamitems a {
+    font-size: 1.2em;
+    padding: 0;
+    margin-left: 1em;
+    color: black;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
 }
 
-.nav-burger {
+#nav-menu #hamitems a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 0%;
+    border-bottom: 3px solid #FF4C09;
+    transition: 0.3s;
+}
+
+#nav-menu #hamitems a:hover:after {
+    width: 100%;
+}
+
+#toggle {
     display: none;
 }
 
-.nav-menu ul li {
-    list-style: none;
-    margin-left: 25px;
-}
-
-.nav-menu ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-weight: 800;
-}
-
-.nav-menu ul li a:hover {
-    color: black;
-}
-
-.nav-menu ul li a::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 3px;
-    background: black;
-    transition: width 0.3s;
-}
-
-.nav-menu ul li a:hover::after {
-    width: 100%;
-}
   
 /* ------ Main ------ */
 
 .cover {
     position: relative;
-    text-align: left;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
 }
 
 .cover-title-container {
     font-family: 'Quicksand';
     position: absolute;
-    bottom: 300px;
-    left: 150px;
+    width: 90%;
+    max-width: 1160px;
+    margin: 0 auto;
+    text-align: left;
+    top: 25em;
+    left: 0;
+    right: 0;
 }
 
 .cover .cover-title-container h1 {
-    color: rgba(255, 255, 255, 1);
+    color: white;
     font-size: 100px;
     margin-bottom: 0;
 }
 .cover .cover-title-container h2 {
-    color: rgba(255, 255, 255, 1);
+    color: white;
     font-size: 25px;
     margin: 0;
     padding-left: 10px;
 }
 
-img {
+.cover-img {
+    display: flex;
     width: 100%;
     height: 100vh;
 }
@@ -124,13 +117,15 @@ img {
 .services-container {
     font-family: 'Raleway';
     height: 100vh;
-    margin: 0 10% ;
+    width: 90%;
+    max-width: 1160px;
+    margin: 0 auto ;
     display: flex;  
     align-items: center;
 }
 
 .services .left-container {
-    margin: 0 25px 0 0;
+    margin: 0 30px 0 0;
     width: 50%;
     height: 75vh;
 }
@@ -175,7 +170,7 @@ img {
 }
 
 .services .right-container {
-    margin: 0 0 0 25px;
+    margin: 0 0 0 30px;
     display: flex;
     overflow: hidden;
     position: relative;
@@ -184,8 +179,8 @@ img {
 }
 
 .services .right-container .services-img {
-    width:  300px;
-    height: 280px;
+    width:  350px;
+    height: auto;
 }
 
 .desktop1 {
@@ -204,16 +199,16 @@ img {
 
 .history {
     width: 100%;
-    background-image: linear-gradient(to left, #F7F8F8, #E9ECF2);  
+    background-image: linear-gradient(to left, #F7F8F8, #E9ECF2); 
     margin: 0 auto;
 }
 
 .history-container {
     width: 90%;
     max-width: 1160px;
+    margin: 0 auto;
     font-family: 'Raleway';
     height: 100vh;
-    margin: 0 10% ;
     display: flex;  
     align-items: center;
 }
@@ -221,10 +216,11 @@ img {
 .history-image {
     width: 120%;
     height: 100%;
+    object-fit: cover;
 }
 
 .history .left-container {
-    margin: 0 25px 0 0;
+    margin: 0 30px 0 0;
     display: flex;
     overflow: hidden;
     position: relative;
@@ -233,7 +229,7 @@ img {
 }
 
 .history .right-container {
-    margin: 0 0 0 25px;
+    margin: 0 0 0 30px;
     width: 50%;
     height: 75vh;
 }
@@ -271,18 +267,19 @@ img {
     width: 90%;
     max-width: 1160px;
     height: 100vh;
-    margin: 0 10% ;
+    margin: 0 auto ;
     display: flex;  
     align-items: center;
 }
 
 .about-image {
-    width: 100%;
+    width: 120%;
     height: 100%;
+    object-fit: cover;
 }
 
 .about .left-container {
-    margin: 0 25px 0 0;
+    margin: 0 30px 0 0;
     width: 50%;
     height: 75vh;
 }
@@ -313,7 +310,7 @@ img {
 }
 
 .about .right-container {
-    margin: 0 0 0 25px;
+    margin: 0 0 0 30px;
     display: flex;
     overflow: hidden;
     position: relative;
@@ -334,19 +331,19 @@ img {
 .works-container {
     width: 90%;
     max-width: 1160px;
-    margin: 0 10% ;
+    margin: 0 auto;
     display: block;  
     align-items: center;
 }
 
 .works-top-container {
     height: 40vh;
-    margin: 0 0 25px 0;
+    margin: 0 0 30px 0;
     display: flex;
 }
 
 .works .left-container {
-    margin: 0 25px 0 0;
+    margin: 0 30px 0 0;
     width: 50%;
 }
 
@@ -377,7 +374,7 @@ img {
 
 
 .works .right-container {
-    margin: 0 0 0 25px;
+    margin: 0 0 0 30px;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -388,13 +385,13 @@ img {
 .works-img1 {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .works-middle-container {
-    border: 3px solid black;
-    background-color: grey;
     height: 35vh;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 
 .img-cont {
@@ -443,14 +440,14 @@ img {
     max-width: 1160px;
     font-family: 'Raleway';
     height: 100vh;
-    margin: 0 10% ;
+    margin: 0 auto ;
     display: flex;  
     align-items: center;
 }
 
 
 .vision .left-container {
-    margin: 0 25px 0 0;
+    margin: 0 30px 0 0;
     display: flex;
     overflow: hidden;
     position: relative;
@@ -463,7 +460,7 @@ img {
     width: 50%;
     height: 85%;
     object-fit: cover;
-    margin: 0 25px 0 0;
+    margin: 0 30px 0 0;
 }
 .vision-image2 {
     width: 50%;
@@ -472,7 +469,7 @@ img {
 }
 
 .vision .right-container {
-    margin: 0 0 0 25px;
+    margin: 0 0 0 30px;
     width: 30%;
     height: 75vh;
 }
@@ -511,20 +508,20 @@ img {
 }
 
 .contact-container {
-    margin: 0 10%;
+    margin: 0 auto;
     display: flex;
     width: 90%;
     max-width: 1160px;
 }
 
 .contact .left-container{
-    margin: 0 25px 0 0;
+    margin: 0 30px 0 0;
     display: flex;
     justify-content: right;
     width: 30%;
 }
 .contact .right-container{
-    margin: 0 0 0 25px;
+    margin: 0 0 0 30px;
     display: flex;
     align-items: center;
     width: 70%;
@@ -557,7 +554,7 @@ a {
     text-decoration: none;
     font-size: 25px;
     font-family: "Quicksand";
-    color: red;
+    color: #FF4C09;
 }
 
 a:hover {
@@ -566,15 +563,401 @@ a:hover {
 
 footer {
     width: 100%;
+    font-size: 18px;
     background-color: black;
     height: 5vh;
+    display: flex;
+    align-items: center;
 }
 
 .footer-container {
-    margin: 0 10%;
-    display: flex;
-    align-items: center;
+    margin: 0 auto;
     width: 90%;
     max-width: 1160px;
     color: white;
 }
+
+footer a {
+    font-size: 18px;
+}
+
+footer a:hover {
+    color: yellow;
+}
+
+@media only screen and (max-width: 1300px) {
+        /* ------ Services ------ */
+    .services-container {
+        height: 50vh;
+        margin: 0 auto ;
+        display: block;  
+        align-items: center;
+
+    }
+
+    .services .left-container {
+        margin: 0 auto;
+        width: 90%;
+        height: 60vh;
+
+    }
+
+    .services .right-container {
+        margin: 0 auto;
+        width: 90%;
+        height: 30vh;
+    }
+
+    .services .right-container .services-img {
+        width:  100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .desktop1 {
+        display: none;
+    }
+
+    .desktop2 {
+        display: none;
+    }
+    /* ------ History ------ */
+
+    .history-container {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 5%;
+        height: 100vh;
+        display: block;  
+        align-items: center;
+    }
+
+    .history-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .history .left-container {
+        margin: 0 auto;
+        width: 90%;
+        height: 50vh;
+    }
+
+    .history .right-container {
+        margin: 0 auto;
+        width: 90%;
+        height: 50vh;
+    }
+
+    /* ------ About ------ */
+
+    .about-container {
+        width: 90%;
+        max-width: 1160px;
+        height: 125vh;
+        margin: 0 auto ;
+        display: block;  
+        align-items: center;
+    }
+
+    .about-image {
+        width: 120%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .about .left-container {
+        margin: 0 auto;
+        width: 90%;
+        height: 50vh;
+    }
+
+    .about .right-container {
+        margin: 0 auto;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        width: 90%;
+        height: 65vh;
+    }
+
+    /* ------ Works ------ */
+
+    .works {
+        padding-top: 100px;
+        width: 100%;
+        height: 140vh;
+        display: block;  
+    }
+
+    .works .right-container {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    /* <------ Header Nac Section ------> */
+    #nav-menu {
+        width: 10em;
+        z-index: 3;
+    }
+    
+    #hamitems {
+        position: absolute;
+        background-color: white;
+        border-radius: 5%;
+        width: 10em;
+        height: 14em;
+
+    }
+
+    #hamitems a {
+        display: block;
+        margin-bottom: 15px;
+        width: 100%;
+        right: 1em;
+        font-size: 1.2em;
+        color: black;
+        text-decoration: none;
+        text-align: left;
+
+    }
+
+    #nav-menu #hamitems a:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+        width: 0%;
+        border-bottom: 3px solid #FF4C09;
+        transition: 0.3s;
+    }
+    
+    #nav-menu #hamitems a:hover:after {
+        width: 50%;
+    }
+
+    
+    #nav-menu label { 
+        display: flex; 
+        justify-content: right;
+        color: black;
+        background: white;
+        font-style: normal;
+        font-size: 1.5em;
+        padding: 10px;
+    }
+    
+    
+    
+    
+    #toggle {
+        display: none;
+    }
+
+    #hamitems { display: none; }
+    #nav-menu input:checked ~ #hamitems { 
+        display: block;
+    }
+    
+    /* ------ Services ------ */
+    .services-container {
+        height: 55vh;
+        margin: 0 auto ;
+        display: block;  
+        align-items: center;
+    }
+    
+    /* ------ About ------ */
+    
+    .about .left-container {
+        margin: 0 auto;
+        width: 90%;
+        height: 55vh;
+    }
+    
+    /* ------ Works ------ */
+    
+    .works {
+        padding-top: 100px;
+        width: 100%;
+        height: 140vh;
+        display: block;  
+    }
+    
+    .works .right-container {
+        margin: 0 auto;
+    }
+    
+    .works-top-container {
+        height: 50vh;
+    }
+    
+    .works-bottom-container {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    /* ------ Main ------ */
+
+    .cover {
+        position: relative;
+        text-align: left;
+    }
+
+    .cover-title-container {
+        font-family: 'Quicksand';
+        position: absolute;
+        left: 0;
+        top: 33%;
+    }
+
+    img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    /* ------ Services ------ */
+
+    .services-container {
+        height: 65vh;
+        width: 90%;
+        display: block;  
+        align-items: center;
+    }
+
+
+    .icon1, .icon2, .icon3 {
+        display: none;
+    } 
+
+    .services .left-container .services-text {
+        margin: auto;
+        font-size: 19px;
+    }
+
+    /* ------ History ------ */
+
+    .history-container {
+        height: 100vh;
+        display: block;  
+        align-items: center;
+    }
+
+    .history-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .history .left-container {
+        width: 100%;
+        height: 30vh;
+        margin: auto;
+    }
+
+    .history .right-container {
+        margin: auto;
+        width: 100%;
+        height: 70vh;
+    }
+
+
+    /* ------ About ------ */
+
+    .about-container {
+        height: 100vh;
+        margin: 0 auto ;
+        margin-bottom: 50px;
+        display: block; 
+    }
+
+    .about-image {
+        width: 120%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .about .left-container {
+        margin: 0 30px 0 0;
+        width: 100%;
+        height: 70vh;
+    }
+
+    .about .right-container {
+        margin: auto;
+        width: 100%;
+        height: 30vh;
+    }
+
+    /* ------ Works ------ */
+
+    .works {
+        height: 130vh;
+    }
+
+    .works-top-container {
+        height: 40vh;
+        margin: 0 0 30px 0;
+        display: flex;
+    }
+
+    .works .left-container {
+        margin: 0 30px 0 0;
+        width: 100%;
+    }
+    .works .right-container {
+        display: none;
+    }
+
+    .works-bottom-container {
+        height: 40vh;
+    }
+
+    /* ------ Vison & Mission ------ */
+
+
+    .vision-container {
+        height: 50vh;
+        display: block;  
+    }
+
+
+    .vision .left-container {
+        display: none;
+    }
+
+    .vision .right-container {
+        margin: 0 auto;
+        width: 100%;
+        height: 40vh;
+    }
+
+    /* ------ Contact ------ */
+
+
+    .contact {
+        height: 80vh;
+    }
+
+    .contact-container {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .contact .left-container{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contact .right-container{
+        margin: 0 auto;
+        width: 100%;
+    }
+};

@@ -7,46 +7,34 @@
     <title>Creative Agency</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 </head>
 <body>
     
     <header id="header">
-        <nav>
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <a href="#header">Creative Agency</a>
-                </div>
-                <!--- Nav Menu --->
-                <div class="nav-menu">
-                    <ul>
-                        <li>
-                            <a href="#services" class="services-section">Services</a>
-                        </li>
-                        <li>
-                            <a href="#history" class="history-section">History</a>
-                        </li>
-                        <li>
-                            <a href="#about" class="about-section">About</a>
-                        </li>
-                        <li>
-                            <a href="#works" class="works-section">Works</a>
-                        </li>
-                        <li>
-                            <a href="#vision" class="vision-section">Vision</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="contact-section">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--- Burger Menu-->
-                <div class="nav-burger">
-                    <div class="nav-burger-line1"></div>
-                    <div class="nav-burger-line2"></div>
-                    <div class="nav-burger-line3"></div>
-                </div>
+        <div class="nav-container">
+                <!--- Logo --->
+            <div class="nav-logo">
+                <a href="#index">Creative Agency</a>
             </div>
-        </nav>
+
+            <!--- Nav Menu --->
+            <nav id="nav-menu">
+                <!--- Burger Menu --->
+                    <input id="toggle" type="checkbox" />
+                    <label id="toggle" for="toggle">&#9776</label>
+
+                <!--- Nav Menu --->
+                <div id="hamitems">
+                    <a href="#services" class="services-section">Services</a>
+                    <a href="#history" class="history-section">History</a>
+                    <a href="#about" class="about-section">About</a>
+                    <a href="#works" class="works-section">Works</a>
+                    <a href="#vision" class="vision-section">Vision</a>
+                    <a href="#contact" class="contact-section">Contact</a>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <!--- Cover section --->
@@ -56,7 +44,7 @@
                 <h1>Creative Agency</h1>
                 <h2>A design agency built to build modern brands...</h2>
             </div>
-            <img src="images/colors.jpg" alt="Artistic Cover">
+            <img class="cover-img" src="images/colors.jpg" alt="Artistic Cover">
         </section>
     </main>
 
@@ -111,9 +99,7 @@
         <div class="history-container">
                 <!--- Left Side --->
             <div class="left-container">
-                <div class="history-image-container">
                     <img class="history-image" src="images/history.jpg" alt="Abstract Image">
-                </div>
             </div>
 
             <!--- Right Side --->
@@ -189,10 +175,10 @@
                <div class="right-container">
                    <img class="works-img1" src="images/works1.jpg" alt="Abstract Image">
                </div>
-                </div>
+            </div>
                 
                 <!--- Bottom images --->
-            <div class="works-top-container">
+            <div class="works-middle-container">
                 <div class="img-cont">
                    <img class="works-img2" src="images/works2.jpg" alt="Man in desert">
                 </div>
